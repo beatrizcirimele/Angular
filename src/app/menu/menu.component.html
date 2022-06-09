@@ -4,26 +4,24 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto d-flex align-items-center">
+        <ul class="navbar-nav mr-auto d-flex align-items-center">
           <li class="nav-item active">
-           <img src="https://scontent.frec3-1.fna.fbcdn.net/v/t1.6435-9/127768580_4010060732356953_7589584999420102425_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_ohc=0AXXpRg8zucAX8F91jN&tn=G57uveF5g53W-YbV&_nc_ht=scontent.frec3-1.fna&oh=00_AT_rH8bpRMh8K1TkBV268WhZwEOL0CqjDIU3m00VhePUbw&oe=62B6CFDA" alt="imagem do user" width="50px" height="50px"
+           <img src="{{foto}}" alt="imagem do user" width="50px" height="50px"
             class="img-fluid rounded-circle">
           </li>
-          <li class="nav-item pl-3 m-3">
-            <p class="m-0  fw-bold text-white fs-16"> Olga Beatriz</p>
+          <li class="nav-item pl-3 ">
+            <p class="m-0  fw-bold text-white fs-16">Olá,{{nome}}</p>
           </li>
 
           <li class="nav-item pl-3">
               <a href="">
                 <p class="text-white fs-16 m-0"><i class="fa fa-pencil-square-o " aria-hidden="true"></i></p>
               </a>
-         
           </li>
           </ul>
-           
-            <ul class="navbar-nav mx-auto d-flex align-items-center">
+            <ul class="navbar-nav ml-auto d-flex align-items-center">
                 <li class="nav-item pl-3">
-                <a class="m-0 fw-bold text-white fs-16 m-3">Sair aqui <i class="fa fa-sign-out" aria-hidden="true"></i>  </a>
+                <a (click)="sair()" class="m-0 fw-bold text-white fs-16 ">Sair  <i class="fa fa-sign-out" aria-hidden="true"></i>  </a>
 
 
                 </li>
